@@ -8,6 +8,7 @@ build-parameters:
   before-all:
     - builder: custom
       commands:
+        - rm -rf node_modules && npm cache clean -f && npm install
         - npm install -g hana-cli
         - npm ci
         - npx cds build --production
