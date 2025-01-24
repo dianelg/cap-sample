@@ -68,5 +68,7 @@ resources:
   - name: MyHANAApp-db
     type: com.sap.xs.hdi-container
     parameters:
+      config:
+        schema: BTP_DEMO_DB
       service: hana
       service-plan: hdi-shared
