@@ -10,6 +10,7 @@ build-parameters:
       commands:
         - rm -rf node_modules && rm package-lock.json && npm cache clean -f && npm install
         - npm install -g hana-cli
+        - npm install --production
         - npm ci
         - npx cds build --production
 modules:
